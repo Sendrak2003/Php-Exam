@@ -1,0 +1,192 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+html, body{
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+body{
+
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: auto;
+}
+
+
+.addListIcon{
+    padding: 0px 15px 0px 15px;
+    margin: 0px 20px 0px 20px;
+    min-height: 650px;
+    height: 90%;
+    max-height: 1000px;
+    width: 40px;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    padding: 0px 10px 0px 10px;
+    width: 40%;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+}
+
+
+.myNav{
+    width: 100%;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+}
+
+
+.listHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 0px 0px 30px;
+    margin: 15px;
+    width: 100%;
+    height: 5%;
+    word-break: break-word;
+}
+
+.deleteListIcon{
+    height: 40px;
+    width: auto;
+    margin: 0px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.taskList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+
+}
+.taskList a{
+    color: black;
+    width: 100%;
+    text-decoration: none;
+}
+
+.newListItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    height: 10%;
+    width: 100%;
+}
+
+.taskCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    width: 90%;
+    background: rgba( 255, 255, 255, 0.60 );
+    backdrop-filter: blur( 17.5px );
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    word-break: break-word;
+}
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.overlay-button a{
+    display: block;
+    width: 100%;
+    margin-left: 3%;
+    text-decoration: none;
+    text-align: justify;
+}
+.overlay-button {
+    background: rgba( 255, 255, 255, 0.40 );
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    text-decoration: none;
+}
+
+.taskCardContent{
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: text !important;
+    padding: 5px;
+}
+
+.deleteTaskIcon{
+    height: 30px;
+    width: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.newListItemInput{
+    margin: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+.addTaskIcon{
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+
+/* Animations */
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+*{
+    animation: fadein 0.5s;
+}
+
+/* Scrollbar Tweaks */
+::-webkit-scrollbar {
+    background-color: rgba( 255, 255, 255, 0 );
+    height: 7px;
+    width: 7px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    width: 0px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(86, 86, 86);
+    border-radius: 10px;
+}
+
